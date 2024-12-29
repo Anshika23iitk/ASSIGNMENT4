@@ -10,7 +10,7 @@ Here is the report in a document format for you:
 
 This report discusses the first three models (Index 0, 1, and 2) from the [ConvNetJS](https://cs.stanford.edu/people/karpathy/convnetjs/) project. These models are based on Convolutional Neural Networks (CNNs), which are deep learning algorithms designed for image recognition and classification. The models increase in complexity as we move from Model 0 to Model 2, with each one handling more sophisticated tasks.
 
-**Roll Number**: Last digit of roll number modulo 3: **[1]**
+
 
 ---
 
@@ -92,8 +92,4 @@ The three CNN models (Model 0, Model 1, and Model 2) demonstrate how increasing 
 
 ---
 
-**End of Report**
 
---- 
-
-You can save or print this report as needed. Let me know if you need any further adjustments!
