@@ -1,0 +1,87 @@
+### **Simple Report on CNN Models (Index 0, 1, and 2)**
+
+#### **Introduction:**
+This report looks at the first three models (Index 0, 1, and 2) from the [ConvNetJS](https://cs.stanford.edu/people/karpathy/convnetjs/) project. These models use Convolutional Neural Networks (CNNs), which are a type of deep learning model used for recognizing patterns in images. Each model gets more complex to handle more difficult tasks.
+
+**Roll Number:** Last digit of roll number modulo 3: **[1]**
+
+---
+
+### **1. What Do These Models Do?**
+
+#### **Model 0: Simple CNN (Shallow Net)**
+
+- **Purpose**: This is the simplest model, used for simple tasks like recognizing basic features in images. It’s good for small, easy datasets.
+- **How it Works**: It has a few layers that help it recognize simple features like edges in images. It uses:
+  - **Convolution Layer**: Finds basic patterns in images.
+  - **Pooling Layer**: Makes the image smaller but keeps the important parts.
+  - **Fully Connected Layer**: Combines the patterns to make a decision about what the image shows.
+
+#### **Model 1: LeNet-like CNN**
+
+- **Purpose**: This model is slightly more complex and is used for tasks like digit recognition (e.g., recognizing handwritten numbers).
+- **How it Works**: It has more layers than Model 0, which helps it recognize more complex patterns like shapes and textures. It also uses:
+  - **Convolution and Pooling Layers**: To extract features and reduce image size.
+  - **Fully Connected Layer**: To make final decisions.
+
+#### **Model 2: AlexNet-like CNN**
+
+- **Purpose**: This is a much deeper model designed for more complex tasks, like classifying detailed images with many objects, such as photos from the ImageNet dataset.
+- **How it Works**: With many layers, it can understand very complex patterns. It extracts higher-level features like objects and textures. It includes:
+  - **Convolution and Pooling Layers**: For extracting and simplifying features.
+  - **Fully Connected Layers**: To make the final classification.
+
+---
+
+### **2. Key Insights:**
+
+1. **Increasing Complexity**: As you move from Model 0 to Model 2, the models become better at handling harder tasks because they learn to recognize more complex patterns. Model 2 can handle more detailed images.
+2. **Layer Depth**: More layers mean the model can learn more complex features. For example, Model 2 can recognize objects, while Model 0 only detects simple edges.
+3. **Pooling Reduces Size**: Pooling layers help make images smaller and easier to process. They help save computer power and reduce overfitting (where the model learns too much from training data and fails to generalize).
+
+---
+
+### **3. How the Models Work:**
+
+All three models use similar steps:
+- **Convolutional Layers**: These layers look at the image and find important patterns like edges or textures.
+- **Pooling Layers**: These make the image smaller by keeping only the most important parts.
+- **Fully Connected Layers**: After the features are found, these layers make the final decision about what the image is.
+
+---
+
+### **4. Features Learned:**
+
+- **Model 0**: Learns basic features like edges and lines.
+- **Model 1**: Learns intermediate features like textures and shapes.
+- **Model 2**: Learns complex features like objects, textures, and finer details.
+
+---
+
+### **5. Layer Names and Why They Matter:**
+
+| **Layer Type**          | **Layer Name/Description**                          | **Why It’s Important**                                                                 |
+|-------------------------|------------------------------------------------------|----------------------------------------------------------------------------------------|
+| **Convolution Layer**    | Conv1, Conv2, Conv3, etc.                            | Finds basic to complex features like edges, shapes, and objects.                       |
+| **Pooling Layer**        | Max Pooling or Average Pooling                       | Makes the image smaller and faster to process, while keeping important details.        |
+| **Activation Layer**     | ReLU (Rectified Linear Unit)                         | Helps the model learn non-linear patterns, making it better at recognizing complex images. |
+| **Fully Connected Layer**| Dense Layer                                          | Makes the final decision based on the features extracted earlier.                      |
+
+---
+
+### **6. Why Each Layer is Needed:**
+
+- **Convolutional Layers**: These layers are essential for the model to understand the image and detect important features.
+- **Pooling Layers**: These reduce the size of the image, which speeds up the process and prevents the model from overfitting.
+- **Fully Connected Layers**: These are needed to classify the image based on the features extracted by the convolution layers.
+- **Activation Layers**: Without them, the model would only be able to learn simple, linear patterns and would not be able to solve complex problems.
+
+---
+
+### **Conclusion:**
+
+The three CNN models (Model 0, Model 1, and Model 2) show how increasing the number of layers helps the model learn more complex patterns in images. While Model 0 is good for simple tasks, Model 2 can handle much more complicated tasks. Each layer in these models has a special job, like finding features in the image, making the image smaller, or making the final decision. As the models get deeper, they get better at recognizing details, but they also require more computing power.
+
+--- 
+
+**End of Report**
